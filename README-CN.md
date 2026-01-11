@@ -80,10 +80,12 @@ VideoDownloader/
 ├── historyManager.py         # 历史记录管理
 ├── logSyntaxHighlighter.py   # 日志语法高亮
 ├── translate_data.py         # 多语言翻译数据
-├── style.qss                 # 界面样式表
+├── style.qss                 # 主界面样式表
+├── history.qss               # 历史样式表
 ├── icon.ico                  # 应用程序图标
 ├── cookies/                  # Cookie 文件存储目录
 ├── requirements.txt          # Python 依赖列表
+├── README-CN.md              # 中文项目说明文档
 └── README.md                 # 项目说明文档
 
 ````
@@ -155,5 +157,3 @@ pyinstaller --onefile --windowed --clean --icon=icon.ico --name VideoDownloader 
 
 为确保能够稳定下载会员或受限内容，**强烈建议使用手动导入 Cookie 的方式**。
 虽然以管理员权限运行程序可以启用自动从浏览器获取 Cookie 的功能，但由于浏览器安全机制限制，该功能通常仅在部分较低版本浏览器中可用。若自动获取失败，程序将自动回退至**无 Cookie 模式**进行下载。
-
-```
