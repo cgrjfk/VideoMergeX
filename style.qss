@@ -1,0 +1,423 @@
+/* =====================================================
+   全局背景（分层 + 轻微空间感）
+   ===================================================== */
+QWidget {
+    background: QLinearGradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #020617,
+        stop: 1 #020617
+    );
+    border-color: #BAE6FD;
+}
+
+
+/* =====================================================
+   文本 / 标签
+   ===================================================== */
+QLabel {
+    font-family: "Inter","Segoe UI","微软雅黑";
+    color: #E5E7EB;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* =====================================================
+   输入框（微抬升感）
+   ===================================================== */
+QLineEdit,
+QPlainTextEdit {
+    font-family: "Source Code Pro","Consolas";
+    font-size: 18px;
+    padding: 8px 10px;
+    background-color: #020617;
+    color: #E5E7EB;
+    border-radius: 0px;
+    border: 1.5px solid #1E293B;
+}
+
+QLineEdit:hover,
+QPlainTextEdit:hover {
+    border-color: #475569;
+}
+
+QLineEdit:focus,
+QPlainTextEdit:focus {
+    border-color: #00E5FF;
+}
+
+
+/* =====================================================
+   URL输入框和文件夹输入框（蓝色边框，比hover时淡）
+   ===================================================== */
+#url_input,
+#folder_path {
+    border-color: #BAE6FD;  /* 比hover时的#00E5FF淡一些 */
+}
+
+#url_input:hover,
+#folder_path:hover {
+    border-color: #00E5FF;  /* hover时保持原来的亮蓝色 */
+}
+
+#url_input:focus,
+#folder_path:focus {
+    border-color: #00E5FF;  /* focus时保持原来的亮蓝色 */
+}
+
+
+/* =====================================================
+   多行URL输入框
+   ===================================================== */
+#url_input_multiline {
+    border-color: #BAE6FD;  /* 同样应用淡蓝色 */
+}
+
+#url_input_multiline:hover {
+    border-color: #00E5FF;
+}
+
+#url_input_multiline:focus {
+    border-color: #00E5FF;
+}
+
+
+/* =====================================================
+   普通按钮（克制的交互反馈）
+   ===================================================== */
+QPushButton {
+    font-family: "Inter","Segoe UI";
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 14px;
+    background-color: #020617;
+    color: #E5E7EB;
+    border-radius: 0px;
+    border: 1.5px solid #1E293B;
+}
+
+QPushButton:hover {
+    background-color: #0F172A;
+    border-color: #00E5FF;
+}
+
+QPushButton:pressed {
+    background-color: #020617;
+    border-color: #38BDF8;
+}
+
+
+/* =====================================================
+   进度条（流动错觉）
+   ===================================================== */
+QProgressBar {
+    background-color: #020617;
+    border: 1.5px solid #00E5FF;
+    text-align: center;
+    color: #7DD3FC;
+    font-family: "Source Code Pro","Consolas";
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+QProgressBar::chunk {
+    background: QLinearGradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #00E5FF,
+        stop: 0.5 #38BDF8,
+        stop: 1 #00E5FF
+    );
+    margin: 1px;
+}
+
+
+/* =====================================================
+   日志 / 输出区域（终端深度）
+   ===================================================== */
+QTextEdit {
+    font-family: "JetBrains Mono","Source Code Pro","Consolas";
+    font-size: 15px;
+    line-height: 1.4;
+    color: #E5E7EB;
+    background-color: #020617;
+    padding: 8px;
+    border-radius: 0px;
+    border: 1.5px solid #1E293B;
+}
+
+QTextEdit:hover {
+    border-color: #334155;
+}
+
+
+/* =====================================================
+   表格整体（产品级）
+   ===================================================== */
+QTableWidget {
+    background-color: #020617;
+    color: #E5E7EB;
+    gridline-color: #1E293B;
+    alternate-background-color: #0B1220;
+    font-family: "Source Code Pro","Consolas";
+    font-size: 18px;
+}
+
+QTableWidget::item:selected {
+    background-color: #0F172A;
+    color: #7DD3FC;
+}
+
+
+/* =====================================================
+   表头
+   ===================================================== */
+QHeaderView::section {
+    font-family: "Source Code Pro","Consolas";
+    font-size: 10pt;
+    font-weight: bold;
+    color: #00E5FF;
+    background-color: #0F172A;
+    border: none;
+    border-bottom: 1px solid #00E5FF;
+    padding: 6px;
+}
+
+
+/* =====================================================
+   核心主按钮
+   ===================================================== */
+QPushButton#downloadButton,
+QPushButton#lang_button,
+QPushButton#batch_button {
+    font-family: "Inter","Segoe UI";
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #020617;
+    color: #7DD3FC;
+    border-radius: 0px;
+    border: 2px solid #00E5FF;
+    padding: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+QPushButton#downloadButton:hover,
+QPushButton#lang_button:hover,
+QPushButton#batch_button:hover {
+    background-color: #0F172A;
+    border-color: #38BDF8;
+}
+
+QPushButton#downloadButton:pressed,
+QPushButton#lang_button:pressed,
+QPushButton#batch_button:pressed {
+    background-color: #020617;
+    border-color: #00E5FF;
+}
+
+
+/* =====================================================
+   主框架
+   ===================================================== */
+#main_frame {
+    border-radius: 0px;
+}
+
+#download_tab {
+    background-color: transparent;
+}
+
+
+/* =====================================================
+   标题标签
+   ===================================================== */
+#title_label {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4FC3F7;
+}
+
+
+/* =====================================================
+   表格额外样式
+   ===================================================== */
+#task_table QHeaderView::section {
+    font-family: "Source Code Pro","Consolas";
+    font-size: 10pt;
+    font-weight: bold;
+    color: #00E5FF;
+    background-color: #0F172A;
+    border-bottom: 1px solid #00E5FF;
+    padding: 6px;
+}
+
+#task_table QTableWidget::item {
+    font-family: "Source Code Pro","Consolas";
+    font-size: 11pt;
+    font-weight: 600;
+}
+
+#task_table QProgressBar {
+    font-family: "Source Code Pro","Consolas";
+    border: 1px solid #334155;
+    border-radius: 4px;
+    text-align: center;
+    color: #e2f5f4;
+    background-color: #0F172A;
+}
+
+#task_table QProgressBar::chunk {
+    background-color: qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 0,
+        stop: 0   #00E5FF,
+        stop: 1   #4FC3F7
+    );
+    border-radius: 3px;
+}
+
+
+/* =====================================================
+   侧边栏容器
+   ===================================================== */
+#log_container {
+    background-color: #1e2533;
+    border-left: 1px solid #2d3748;
+    border-radius: 0;
+}
+
+
+/* =====================================================
+   侧边栏标题
+   ===================================================== */
+#log_title_label {
+    font-family: "Source Code Pro", "Consolas";
+    font-size: 16px;
+    font-weight: 600;
+    color: qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 0,
+        stop: 0   #00E5FF,
+        stop: 0.5 #4FC3F7,
+        stop: 1   #00B0FF
+    );
+    letter-spacing: 1.2px;
+}
+
+
+/* =====================================================
+   侧边栏关闭按钮
+   ===================================================== */
+#sidebar_close_button {
+    background-color: #2d3748;
+    color: #00E5FF;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: "Source Code Pro","Consolas";
+    padding: 0px;
+}
+
+#sidebar_close_button:hover {
+    background-color: #374151;
+    color: #4FD1C7;
+    transform: scale(1.05);
+}
+
+#sidebar_close_button:pressed {
+    background-color: #4B5563;
+    transform: scale(0.95);
+}
+
+
+/* =====================================================
+   日志输出框
+   ===================================================== */
+#output_box {
+    background-color: #020617;
+    border: 1.5px solid #00E5FF;
+    font-family: "JetBrains Mono", "Source Code Pro", "Consolas";
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 12px;
+    font-weight: 500;
+    color: #2196F3;
+    selection-background-color: rgba(0, 229, 255, 0.3);
+}
+
+#output_box QScrollBar:vertical {
+    background-color: #1e2533;
+    width: 8px;
+    border: none;
+}
+
+#output_box QScrollBar::handle:vertical {
+    background-color: #00E5FF;
+    min-height: 20px;
+}
+
+#output_box QScrollBar::handle:vertical:hover {
+    background-color: #4FD1C7;
+}
+
+#output_box QScrollBar::add-line:vertical,
+#output_box QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+}
+
+
+/* =====================================================
+   清空日志按钮
+   ===================================================== */
+#clear_log_button {
+    font-family: "Source Code Pro","Consolas";
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 16px;
+    background-color: rgba(239, 68, 68, 0.2);
+    color: #EF4444;
+    border: 1.5px solid rgba(239, 68, 68, 0.5);
+    letter-spacing: 0.5px;
+}
+
+#clear_log_button:hover {
+    background-color: #991B1B;
+    border-color: #EF4444;
+    color: #FECACA;
+    transform: translateY(-1px);
+}
+
+#clear_log_button:pressed {
+    background-color: #B91C1C;
+    border-color: #F87171;
+    color: #FCA5A5;
+    transform: translateY(0px);
+}
+
+
+/* =====================================================
+   侧边栏切换按钮
+   ===================================================== */
+#sidebar_toggle_button {
+    background-color: #1e2533;
+    border: 1.5px solid #00E5FF;
+    border-radius: 22px;
+    color: #00E5FF;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Source Code Pro","Consolas";
+    padding: 5px;
+}
+
+#sidebar_toggle_button:hover {
+    background-color: #2d3748;
+    border-color: #4FD1C7;
+    color: #4FD1C7;
+    transform: scale(1.05);
+}
+
+#sidebar_toggle_button:pressed {
+    background-color: #374151;
+    transform: scale(0.95);
+}

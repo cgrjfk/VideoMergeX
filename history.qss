@@ -1,0 +1,115 @@
+/* HistoryManager 样式表 */
+/* 主窗口样式 */
+HistoryManager {
+    background-color: #020617;
+}
+
+/* 标题标签样式 */
+#historyLabel {
+    font-size: 26px;
+    font-weight: bold;
+    color: #4e8cff;
+    letter-spacing: 2px;
+}
+
+/* 搜索栏样式 */
+#searchBar {
+    font-size: 18px;
+    padding: 4px 10px;
+    border: 1px solid #555;
+    background-color: #1e2533;
+    color: white;
+}
+
+#searchBar:focus {
+    border: 1px solid #4e8cff;
+    outline: none;
+}
+
+/* 清空按钮样式 */
+#clearButton {
+    color: #ff4b5c;
+    border: 1px solid #ff4b5c;
+    font-size: 18px;
+    padding: 4px 8px;
+    background: none;
+    min-width: 150px;
+    max-width: 150px;
+}
+
+#clearButton:hover {
+    background: #ff4b5c22;
+}
+
+/* 导出按钮样式 */
+#exportButton {
+    color: #00bfff;
+    border: 1px solid #00bfff;
+    font-size: 18px;
+    padding: 4px 8px;
+    background: none;
+    min-width: 150px;
+    max-width: 150px;
+}
+
+#exportButton:hover {
+    background: #ff4b5c22;
+}
+
+/* 加载更多按钮样式 */
+#loadMoreButton {
+    color: #00bfff;
+    background: none;
+    border: 1px solid #00bfff;
+    padding: 4px 14px;
+    margin: 8px 0 0 0;
+}
+
+#loadMoreButton:hover {
+    background: #00bfff22;
+}
+
+/* 空状态标签样式 */
+#emptyLabel {
+    font-size: 18px;
+    color: #bbbbbb;
+    margin-top: 32px;
+}
+
+/* 表格样式 */
+#historyTable {
+    font-size: 16px;
+    background: QLinearGradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #020617,
+        stop: 1 #020617
+    );
+    color: white;
+}
+
+#historyTable::item {
+    padding: 6px;
+}
+
+#historyTable::item:selected {
+    background-color: #3a4756;
+    color: white;
+}
+
+#historyTable QHeaderView::section {
+    font-family: "Source Code Pro","Consolas";
+    font-size: 10pt;
+    font-weight: bold;
+    color: #00E5FF;
+    background-color: #0F172A;
+    border-bottom: 1px solid #00E5FF;
+    padding: 6px;
+}
+
+/* Toast消息样式 */
+#toastLabel {
+    background-color: rgba(0, 0, 0, 180);
+    color: white;
+    padding: 8px 16px;
+    font-size: 12px;
+}
