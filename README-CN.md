@@ -135,6 +135,7 @@ pyinstaller --onefile --windowed --clean --icon=icon.ico --name VideoDownloader 
 2. 安装 Cookie 导出插件，例如：
  Chrome / Edge：*Get cookies.txt*
  Firefox：*cookies.txt*
+
 3. 打开目标视频网站页面
 4. 通过插件导出 `cookies.txt` 文件
 5. 在程序中手动导入该 Cookie 文件
