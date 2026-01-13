@@ -1,11 +1,11 @@
 translations = {
     'window_title': {
-        'cn': 'VidMergeX ',
-        'en': 'VidMergeX '
+        'cn': 'CyberDL ',
+        'en': 'CyberDL '
     },
     'title': {
-        'cn': '🎬 VidMergeX 高清下载器',
-        'en': '🎬 VidMergeX HD Downloader'
+        'cn': '🎬 CyberDL 高清下载器',
+        'en': '🎬 CyberDL HD Downloader'
     },
     'url_label': {
         'cn': '📺 视频链接：',
