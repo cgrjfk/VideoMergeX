@@ -22,7 +22,7 @@ from logSyntaxHighlighter import LogSyntaxHighlighter
 from translate_data import translations
 
 # 设置应用程序ID
-appId = "VidMergeX"
+appId = "CyberDL"
 ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(appId)
 
 
