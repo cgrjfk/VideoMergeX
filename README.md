@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>🎬VideoMergeX</h1>
+<h1>CyberDL</h1>
 
 <p><strong>A Modern GUI with subtle cyberpunk aestheticsVideo Downloader powered by yt-dlp</strong></p>
 
